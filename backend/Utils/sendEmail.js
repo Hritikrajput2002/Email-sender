@@ -12,6 +12,7 @@ const sendEmail = async (object) => {
             pass: process.env.SMTP_Password
         }
     });
+    
     const mailObject = {
         from: process.env.SMTP_Mail,
         to: object.email,
