@@ -9,7 +9,7 @@ const path = require('path');
 
 //middlewares
 app.use(cors({
-   origin: 'http://localhost:3000',
+   origin: ['http://localhost:3000', 'https://email-sender-two-zeta.vercel.app/'],
    credentials: true,
 }));
 
